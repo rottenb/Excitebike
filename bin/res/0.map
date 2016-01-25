@@ -1,0 +1,26 @@
+!- map #
+0
+!- # of collision boxes
+3
+!- Collision box format:
+!-  type
+!-  x, y, w, h of box
+!-
+!- BOX #1 UP RAMP
+UP
+0
+17
+16
+49
+!- BOX #2 FLAT PART
+FLAT
+17
+17
+8
+49
+!- BOX #3 DOWN RAMP
+DOWN
+25
+17
+16
+49

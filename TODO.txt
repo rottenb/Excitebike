@@ -1,0 +1,17 @@
+FEATURES:
+X   handle screen movement
+O animate rider
+O array for track obstacles
+O random obstacle placement
+collision detection
+X   screen scaling
+X   sprites offsets (rider and obstacles, data and track placement)
+drop down enemies (knock into bales, while they try the same)
+tricks in the air
+O control scheme
+X   proper image path handling
+
+BUGS:
+X   coasting screws up screen scrolling
+stopping mis-orders animation indexing
+stopping on track border locks rider to border

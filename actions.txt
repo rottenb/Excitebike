@@ -1,0 +1,17 @@
+GAS, BRAKE, COAST, TURN_L, TURN_R, WHEELIE, JUMP, CRASH
+
+while GAS: [move forward] and:
+  TURN_L (-> + w) (test for GAS and TURN_L)
+  TURN_R (-> + s) (test for GAS and TURN_R)
+  WHEELIE (-> + a) (test for GAS and WHEELIE)
+  JUMP (-> + space while increasing height) (test for GAS and WHEELIE and HEIGHT)
+  CRASH (-> + countdown in crash zones) (test for GAS and linger in zones)
+  interrupts COAST (press -->)
+
+while BRAKE: [stop]
+  interrupt GAS, COAST (press <--)
+
+while COAST: [slow to BRAKE]
+  TURN_L (w) (test for COAST and TURN_L)
+  TURN_R (s) (test for COAST and TURN_R)
+  CRASH (countdown in crash zones) (test for linger in zones)
